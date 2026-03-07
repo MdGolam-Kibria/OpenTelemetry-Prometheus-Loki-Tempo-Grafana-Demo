@@ -40,3 +40,8 @@ http://prometheus:9090
 
 docker compose -f docker-compose-observability.yml up
 docker compose -f docker-compose-observability.yml down
+
+
+remove unused everything with docker system use command below,
+
+docker system prune -a --volumes -f
