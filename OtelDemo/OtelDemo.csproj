@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>OtelDemo</RootNamespace>
+        <AssemblyName>OtelDemo</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- OpenTelemetry Core + Hosting (includes logging bridge) -->
+        <PackageReference Include="OpenTelemetry" Version="1.11.2" />
+        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.11.2" />
+
+        <!-- OTLP + Console Exporters -->
+        <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.11.2" />
+        <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.11.2" />
+
+        <!-- Auto-instrumentation -->
+        <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.11.1" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.11.1" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.11.1" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Process" Version="0.5.0-beta.7" />
+
+        <!-- Swagger -->
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+    </ItemGroup>
+
+</Project>

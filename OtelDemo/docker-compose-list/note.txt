@@ -1,0 +1,3 @@
+More tools installed and configured the following on server: <your-ip>
+
+Sonarqube (Security)             : http://<your-ip>:9090
